@@ -1,5 +1,91 @@
-body{
-    width: auto;
-    height: 100px;
+body {
+margin: 0;
+background: #000000;
+}
+
+#roller{
+    z-index: 20000;
+    right: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: white;
+    height:100%;
+    flex-direction: column;
+}
+#rolledVideo{
     
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 44;
+
+}
+#rollInput{
+    display: flex;
+    flex-direction: row;
+
+}
+input#diceAmount,button{
+    padding: 5px;
+     font-size: 16px;
+     border-width: 0px;
+     border-color: #000000;
+     background-color: #000000;
+     color: #ffffff;
+     border-style: hidden;
+     border-radius: 0px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    
+
+}
+ input:focus {
+     outline:none;
+}
+button:hover{
+    cursor: pointer;
+}
+P #result,#Fails,#wins{
+    box-shadow: #ffffff 5px;
+} 
+
+#rollResults{
+    visibility: hidden;
+    animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

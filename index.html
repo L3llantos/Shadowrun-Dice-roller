@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-
+<link rel="stylesheet" href="style.css">
 
 <body>
-    <input placeholder="amount of dice to roll" type="text" id="diceAmount">
-    <button onclick="rollDice()">Roll</button>
-    <p id="Result"></p>
-    <h5>Fails (1)</h5>
-    <P id="fails"></P>
-    <h5>succsess (5/6)</h5>
-    <P id="wins"></P>
-    <script src="scripts.js"></script>
+    <section id="roller">
+        <div id="rollInput">
+
+            <input placeholder="Quantity Of Dice" type="text" id="diceAmount">
+            <button onclick="rollDice()">Roll</button>
+        </div>
+
+        <div id="rollResults">
+            <h5>Roll</h5>
+            <p id="Result"></p>
+            <h5>Fails (1)</h5>
+            <P id="fails"></P>
+            <h5>succsess (5/6)</h5>
+            <P id="wins"></P>
+        </div>
+        <script src="scripts.js"></script>
+    </section>
+    <video id="rolledVideo" src="img/Smoke.mp4" muted></video>
+
 </body>
 
 </html>
