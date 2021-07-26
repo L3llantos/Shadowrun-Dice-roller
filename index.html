@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
 
+<script src="scripts.js"></script>
+
 <body>
     <section id="roller">
         <div id="rollInput">
@@ -14,13 +16,21 @@
             <p id="Result"></p>
             <h5>Fails (1)</h5>
             <P id="fails"></P>
-            <h5>succsess (5/6)</h5>
+            <h5>success (5/6)</h5>
             <P id="wins"></P>
         </div>
-        <script src="scripts.js"></script>
     </section>
     <video id="rolledVideo" src="img/Smoke.mp4" muted preload="auto"></video>
 
+
+    <div id="settings">
+        <p>Disable Animations</p>
+        <label class="switch">
+            <input type="checkbox" id="disableAnimations">
+            <span class="slider"></span>
+        </label>
+
+    </div>
 </body>
 
 </html>
